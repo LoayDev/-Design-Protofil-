@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ :root {
+    --primaryColor: #ff274b ;
+    --secondaryColor: #f36cf3 ;
+    --lightColor: #ffffff ;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --pading : 7% ;
+ }
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    color: #ffffff;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+span {
+    color: var(--primaryColor);
+}
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+nav {
+    padding-top: 2.2rem;
+    padding-left: var(--pading);
+    padding-right: var(--pading);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.7rem 1.5rem;
+}
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--primaryColor); 
+}
+.btn {
+    background-color: var(--primaryColor);
+    border: 10px solid var(--primaryColor);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--lightColor);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--pading);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-texts {
+    position: relative;
+}
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondaryColor);
+}
+.social {
+    margin-top: 3.5rem;
+}
+.social img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transform: 0.6s;
+}
+.social img:hover {
+    transform: scale(1.2);
+}
+.container-imjes {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+.container-imjes img {
+    position: absolute;
+    bottom: 0;
+    transition: bottom 1s;
+}
+.container-imjes:hover .Personal{
+    bottom: 40px;
+    
+}
+.about{
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--pading);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .container-texts {
+    width: 35%;
+}
+.voli {
+    display: inline-flex;
+    width: 100%;
+    font-size: 50px;
+    padding: 1.5rem 2rem;
+
+}
+.footer{
+    background-color: var(--bgColor-2);
+}
+ p {
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+    font-size: 1rem;
+ }
+h5 { 
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+.services {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--pading);
+}
+.text-center {
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+ }
+.card {
+    width: 500px;
+    background-color: var(--bgColor-2);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-left: 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.card i {
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primaryColor);
+    margin: 2rem;
+}
+footer {
+    padding: 2rem var(--pading);
+    background-color: var(--bgColor-1);
+}
+footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .content-footer p {
+    color: var(--lightColor);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+@media (max-width:570px){
+    :root {
+        --padding : 1.5rem
+    }
+    html {
+        font-size: 13px;
+    }
+    .home .container-imgs {
+        display: none;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100;
+    }
+    nav > a {
+        display: none;
+    }
+    nav ul {
+        display: block;
+    }
+    .content-texts {
+        bottom: 0em;
+    }
+    
+
+
+     }
